@@ -1,19 +1,26 @@
 {
-  "name": "dotlearn",
-  "version": "1.0.0",
+  "name": "DOTLEARN",
+  "version": "0.0.1",
   "description": "dotlearn",
+  "engines": {
+    "node": "5.9.1"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/asmith1/dotlearn.git"
+    "url": "https://github.com/asmith1/dotlearn"
   },
-  "author": "Ashley & Uku",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/asmith1/dotlearn/issues"
-  },
-  "homepage": "https://github.com/asmith1/dotlearn#readme"
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }

@@ -15,7 +15,7 @@ app.post('/post', function(request, response) {
   response.send("POST TEST");
 });
 
-app.get('/get', function(request, response) {
+app.get('/', function(request, response) {
     response.send("GET TEST");
 });
 
