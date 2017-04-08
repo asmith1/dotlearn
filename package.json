@@ -1,0 +1,19 @@
+{
+  "name": "dotlearn",
+  "version": "1.0.0",
+  "description": "dotlearn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmith1/dotlearn.git"
+  },
+  "author": "Ashley & Uku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asmith1/dotlearn/issues"
+  },
+  "homepage": "https://github.com/asmith1/dotlearn#readme"
+}
