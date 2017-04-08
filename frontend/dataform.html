@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <title> Dotlearn Data Entry Form </title>
     <link rel="stylesheet" href="default.css" type="text/css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"> </script>
+    <!--<script src='http://localhost:8000?callback=sendData' type="text/javascript"> </script> -->
     <script type="text/javascript">
-        
     function sendData() {
             var lat = $('#lat').val();
             var lng = $('#lng').val();
             //newUsername = window.prompt("Please enter your username", "username");
-            $.post( "https://dotlearn.herokuapp.com/post.json", {"lat":lat, "lng": lng},function(result) { 
+            $.post("file://localhost:8000/post.json", {"lat":lat, "lng": lng},function(result) { 
         });
     }
     </script>
@@ -24,7 +24,15 @@
     Latitude:<br>
     <input type="text" name="lat" id="lat"><br>
     Longitude:<br>
-    <input type="text" name="lng" id="lng">
+    <input type="text" name="lng" id="lng"><br>
+    Name of School: <br>
+    <input type="text" name="school" id="school"><br>
+    Name of School: <br>
+    <input type="text" name="school" id="school"><br>
+    Name of Administrative Contact: <br>
+    <input type="text" name="contact" id="contact"><br>
+    Contact's Phone Number: <br>
+    <input type="text" name="phone" id="phone"><br>
     <input type="submit" value="Submit">
     </form>
     </div>
