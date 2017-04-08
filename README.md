@@ -1,2 +1,5 @@
-Readme for dotlearn ID hack project
-TESTING
+International Development Hackathon
+
+DotLearn Data Entry Form Project
+
+Created by Ashley Smith and Uku-Kaspar Uustalu
