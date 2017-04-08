@@ -3,12 +3,12 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
-/* DO WE NEED CORS? let's assume yes */
+/* DO WE NEED CORS? let's assume no
 app.use(function(request, response, next) {
   response.header("Access-Control-Allow-Origin", "*");
   response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
-});
+}); */
 
 // Mongodb setup from Ming's example
 var mongoUri = process.env.MONGODB_URI || process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/myDataBase';
