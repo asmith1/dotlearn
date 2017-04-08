@@ -18,7 +18,7 @@ var db = MongoClient.connect(mongoUri, function(error, databaseConnection) {
 });
 
 
-app.post('/post', function(request, response) {
+app.post('/post.json', function(request, response) {
  // response.send("POST TEST");
   var requestBody = req.body;
     if (requestBody.username == "" || requestBody.username == null || requestBody.score == "" || requestBody.score == null || requestBody.grid == "" || requestBody.grid == null) {
