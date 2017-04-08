@@ -3,22 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <title> DOTLEARN</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/
-        js?key=AIzaSyArEC5-lPTk3kKpCsU7PErRuFtC5OYIF4A"></script>
+    <link rel="stylesheet" href="default.css" type="text/css" />
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArEC5-lPTk3kKpCsU7PErRuFtC5OYIF4A"></script>
     <script type="text/javascript" src="mapscript.js"></script>
 </head>
 
-<body>
-    <div class = "map">
-    Map of Ghana
-    <script src = "mapscript.js"></script>
-    <script async defer
-    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDT1Jhdy8VGzt7Zsb-cmgDSX0-wBsPS1dc&callback=initMap">
-    </script>
-
-    </div>
-
+<body onload="init()">
+    <div id = "map"></div>
 </body>
-
 </html>
