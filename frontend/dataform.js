@@ -8,6 +8,6 @@ function sendData()
     var lat = $("#lat").val();
     var lng = $("#lng").val();
     //newUsername = window.prompt("Please enter your username", "username");
-    $.post( "https://sleepy-depths-86014.herokuapp.com/submit.json", {"lat":lat, "lng": lng},function(result) { 
+    $.post( "https://dotlearn.herokuapp.com/post.json", {"lat":lat, "lng": lng},function(result) { 
     });
 }
