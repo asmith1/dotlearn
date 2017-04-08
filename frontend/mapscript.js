@@ -5,7 +5,7 @@ var ghanaCtr;
 var map;
 
 var mapOptions = {
-	zoom: 5,
+	zoom: 7,
 	center: ghanaCtr,
 	mapTypeId: google.maps.MapTypeId.ROADMAP
 }
