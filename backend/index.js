@@ -3,12 +3,14 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
-/* DO WE NEED CORS? let's assume no
-app.use(function(request, response, next) {
+/* DO WE NEED CORS? let's assume yes! */
+app.all('/', function(request, response, next) {
   response.header("Access-Control-Allow-Origin", "*");
   response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.header("Access-Control-Allow-Headers", "GET, PUT, POST, DELETE");
   next();
-}); */
+}); 
 
 // Mongodb setup from Ming's example
 var mongoUri = process.env.MONGODB_URI || process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/myDataBase';
@@ -20,11 +22,11 @@ var db = MongoClient.connect(mongoUri, function(error, databaseConnection) {
 
 app.post('/post.json', function(request, response) {
  // response.send("POST TEST");
-  var requestBody = req.body;
-    if (requestBody.username == "" || requestBody.username == null || requestBody.score == "" || requestBody.score == null || requestBody.grid == "" || requestBody.grid == null) {
+  var requestBody = request.body;
+    /*if (requestBody.username == "" || requestBody.username == null || requestBody.score == "" || requestBody.score == null || requestBody.grid == "" || requestBody.grid == null) {
         response.send(200);
         return;
-    }
+    }*/
 
     var toInsert = {
         "lat": requestBody.lat,
